@@ -1,0 +1,59 @@
+Read: https://medium.com/mlearning-ai/install-tensorflow-on-mac-m1-m2-with-gpu-support-c404c6cfb580
+Download Xcode
+Download proper Miniconda to the computer: Download "Miniconda3 macOS Apple M1 64-bit pkg" or whatever the latest version is from https://docs.conda.io/en/latest/miniconda.html
+Select the default folder during the installation
+Open a terminal
+
+conda create --name tf
+conda activate tf
+conda install -c apple tensorflow-deps
+pip install tensorflow-macos
+pip install tensorflow-metal
+conda install jupyter
+conda install pandas
+conda install seaborn
+pip install scikit-learn
+
+Try checking GPU
+
+***
+
+Extra (should not be necessary):
+
+Download proper Miniconda to the computer
+Install following the default options
+Open a terminal
+Type "conda list"
+Create a new environment: "conda create --name study"
+Go to your new environment: "conda activate study"
+Install Jupyter: "conda install jupyter"
+Install Spyder: "conda install spyder"
+Type "jupyter notebook" to open jupyter
+Type "spyder" to open spyder
+Install numpy: "conda install numpy"
+Install pandas: "conda install pandas"
+Install matplotlib: "conda install matplotlib"
+Could not install tensorflow with the latest Python. NP. Study it on Colab.
+If "conda install <package>" does not work, use the following: "conda install -c conda-forge <package>" (used this for scikit-learn). If none works, use "pip install <package>" (used this for cufflinks)
+
+OR
+
+Start with:
+https://medium.com/mlearning-ai/install-tensorflow-on-mac-m1-m2-with-gpu-support-c404c6cfb580
+
+Then,
+
+conda install spyder
+conda install seaborn
+
+pip install numpy --upgrade
+pip install pandas --upgrade
+pip install matplotlib --upgrade
+pip install scikit-learn --upgrade
+pip install plotly --upgrade
+pip install cufflinks --upgrade
+pip install seaborn --upgrade
+pip install jupyter --upgrade
+
+Error:
+pip install spyder --upgrade
